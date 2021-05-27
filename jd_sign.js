@@ -65,8 +65,8 @@ function sendNotificationIfNeed() {
 
   const options ={
     uri:  `https://sc.ftqq.com/${SCKEY}.send`,
-    form: { text, desp },
-    json: true,
+    form: {"title":text, "desp":desp },
+    // json: true,
     method: 'POST'
   }
 
